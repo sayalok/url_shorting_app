@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index", 
+    "start": "node index",
     "dev": "nodemon index"
   },
   "author": "",
@@ -16,5 +16,8 @@
     "nodemon": "^1.19.1",
     "shortid": "^2.2.14",
     "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }
