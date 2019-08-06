@@ -1,15 +1,18 @@
-const express   = require('express')
-const connectDb = require('./config/connectDb')
+const express   	= require('express')
+const connectDb 	= require('./config/db')
+
+const indexRoute 	= require('./routes/index')
+const urlRoute 		= require('./routes/url')
 
 const app = express()
 connectDb()
 
 app.use(express.json(false))
 
-// app.use('', (req,res,next) => {
-//     console.log('conected ... ')
-// })
+app.use('', indexRoute )
+app.use('/api/url', urlRoute)
 
-app.listen(3030, () => [
+const port = 3030
+app.listen(port, () => [
     console.log('ok')
 ])
