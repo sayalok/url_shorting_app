@@ -1,4 +1,4 @@
 {
-    "mongoUri" : "mongodb+srv://sayalok:sayalook00@cluster0-bgzjc.mongodb.net/test?retryWrites=true&w=majority",
+    "mongoUri" : "",
     "baseUrl" : "http://localhost:3030"
 }
